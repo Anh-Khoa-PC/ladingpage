@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CR</title>
+    <meta name="description" content="Get in touch with CR - a startup company in Vietnam focusing on creating technology solutions for daily life.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+
+    <div id="preloader">
+        <div class="loader">
+            <span class="loader-text">CR</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+
+
+    <div class="wrapper">
+        <!-- Navigation -->
+        <nav>
+            <nav id="main-nav">
+                <div class="container">
+                    <a href="index.html" class="logo">CR</a>
+                    <button onclick="window.location.href='index.html';" class="btn back" id="back">Back</button>
+            </nav>
+                
+               
+        </nav>
+
+    <!-- Contact Hero Section -->
+    <section id="contact-hero" class="section">
+        <div class="container">
+            <div class="contact-hero-content fade-in">
+                <h1 class="hero-heading">LET'S GET STARTED</h1>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 class="contact-heading">Contact Information</h2>
+
+                        <div class="contact-detail">
+                          
+                            <p class="contact-value">kanh05113@gmail.com</p>
+                        </div>
+
+                      
+
+                        <div class="social-contact">
+                            <h3 class="contact-label">Our Social Media</h3>
+                            <div class="social-links-row">
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2 class="contact-heading">Send Us a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-primary submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-social">
+                    <h3>Social</h3>
+                    <ul class="social-links">
+                        <li class="social-item">
+                            <a href="https://facebook.com" target="_blank">Facebook</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://facebook.com" target="_blank">Instagram</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://facebook.com" target="_blank">Linkedin</a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://facebook.com" target="_blank">X</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Always available</h3>
+                    <p>kanh05113@gmail.com</p>
+                </div>
+
+                <div class="footer-business">
+                    <h3 class="footer-title">For business</h3>
+                    <p>kanh05113@gmail.com</p>
+                </div>
+
+                <div class="footer-form">
+                    <div class="form-title">
+                        <p>Send Email</p>
+                        <p>For Us</p>
+                    </div>
+                    <form class="email-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 CR</p>
+                <p>CR Creative Revolution Startup: Driven by All Our Will.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // In a real implementation, you would send the data to a server
+            alert(`Thank you for your message, ${name}!\nWe will get back to you at ${email} soon.`);
+
+            // Reset the form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
